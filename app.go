@@ -368,7 +368,6 @@ func main() {
 	store.pool = dbPool
 
 	r := gin.Default()
-	docs.SwaggerInfo.BasePath = "/"
 
 	r.GET("/balance/:userID", func(c *gin.Context) {
 		balance(c, store)
